@@ -1,3 +1,9 @@
-export default function Card(){
-    return <><div>Card</div></>
-}
+const Card: React.FC = () => {
+  return (
+    <>
+      <div>Card</div>
+    </>
+  );
+};
+
+export default Card;

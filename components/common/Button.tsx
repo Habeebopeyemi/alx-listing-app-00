@@ -1,3 +1,9 @@
-export default function Button(){
-    return <><button>Button</button></>
-}
+const Button: React.FC = () => {
+  return (
+    <>
+      <button>Button</button>
+    </>
+  );
+};
+
+export default Button;
