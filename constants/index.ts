@@ -1,4 +1,4 @@
-import { PropertyProps } from "@/interfaces/index";
+import { PropertyProps, FooterProps, PolicyProps } from "@/interfaces/index";
 import ROOM from "@/public/assets/images/svgs/room.svg";
 import { AccommodationTypes } from "@/interfaces/index";
 import MANSION from "@/public/assets/images/svgs/mansion.svg";
@@ -18,6 +18,7 @@ import TREEHOUSE from "@/public/assets/images/svgs/treehouse.svg";
 import CABINS from "@/public/assets/images/svgs/cabins.svg";
 import CASTLES from "@/public/assets/images/svgs/castles.svg";
 
+const ASSETPATH = "/assets/images/svgs";
 export const PROPERTYLISTINGSAMPLE: PropertyProps[] = [
   {
     name: "Villa Ocean Breeze",
@@ -34,7 +35,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps[] = [
       shower: "3",
       occupants: "4-6",
     },
-    image: "https://example.com/image1.jpg",
+    image: `${ASSETPATH}` + "/image1.svg",
     discount: "",
   },
   {
@@ -52,7 +53,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps[] = [
       shower: "2",
       occupants: "5-7",
     },
-    image: "https://example.com/image2.jpg",
+    image: `${ASSETPATH}` + "/image2.svg",
     discount: "30",
   },
   {
@@ -70,7 +71,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps[] = [
       shower: "1",
       occupants: "2-3",
     },
-    image: "https://example.com/image3.jpg",
+    image: `${ASSETPATH}` + "/image3.svg",
     discount: "",
   },
   {
@@ -88,7 +89,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps[] = [
       shower: "2",
       occupants: "2-4",
     },
-    image: "https://example.com/image4.jpg",
+    image: `${ASSETPATH}` + "/image4.svg",
     discount: "15",
   },
   {
@@ -106,7 +107,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps[] = [
       shower: "2",
       occupants: "4-6",
     },
-    image: "https://example.com/image5.jpg",
+    image: `${ASSETPATH}` + "/image5.svg",
     discount: "20",
   },
   {
@@ -124,7 +125,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps[] = [
       shower: "4",
       occupants: "8-10",
     },
-    image: "https://example.com/image6.jpg",
+    image: `${ASSETPATH}` + "/image6.svg",
     discount: "",
   },
   {
@@ -142,7 +143,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps[] = [
       shower: "3",
       occupants: "4-5",
     },
-    image: "https://example.com/image7.jpg",
+    image: `${ASSETPATH}` + "/image7.svg",
     discount: "10",
   },
   {
@@ -160,7 +161,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps[] = [
       shower: "3",
       occupants: "5-6",
     },
-    image: "https://example.com/image8.jpg",
+    image: `${ASSETPATH}` + "/image8.svg",
     discount: "25",
   },
   {
@@ -178,7 +179,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps[] = [
       shower: "1",
       occupants: "2-3",
     },
-    image: "https://example.com/image9.jpg",
+    image: `${ASSETPATH}` + "/image9.svg",
     discount: "",
   },
   {
@@ -196,7 +197,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps[] = [
       shower: "2",
       occupants: "5-7",
     },
-    image: "https://example.com/image10.jpg",
+    image: `${ASSETPATH}` + "/image10.svg",
     discount: "40",
   },
   {
@@ -214,7 +215,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps[] = [
       shower: "4",
       occupants: "6-8",
     },
-    image: "https://example.com/image11.jpg",
+    image: `${ASSETPATH}` + "/image11.svg",
     discount: "50",
   },
   {
@@ -232,7 +233,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps[] = [
       shower: "3",
       occupants: "4-6",
     },
-    image: "https://example.com/image12.jpg",
+    image: `${ASSETPATH}` + "/image12.svg",
     discount: "",
   },
   {
@@ -250,7 +251,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps[] = [
       shower: "2",
       occupants: "2-4",
     },
-    image: "https://example.com/image13.jpg",
+    image: `${ASSETPATH}` + "/image13.svg",
     discount: "35",
   },
   {
@@ -268,7 +269,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps[] = [
       shower: "1",
       occupants: "2",
     },
-    image: "https://example.com/image14.jpg",
+    image: `${ASSETPATH}` + "/image14.svg",
     discount: "",
   },
   {
@@ -286,7 +287,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps[] = [
       shower: "4",
       occupants: "6-8",
     },
-    image: "https://example.com/image15.jpg",
+    image: `${ASSETPATH}` + "/image15.svg",
     discount: "20",
   },
   {
@@ -304,7 +305,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps[] = [
       shower: "1",
       occupants: "2-4",
     },
-    image: "https://example.com/image16.jpg",
+    image: `${ASSETPATH}` + "/image16.svg",
     discount: "25",
   },
   {
@@ -322,7 +323,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps[] = [
       shower: "3",
       occupants: "6-8",
     },
-    image: "https://example.com/image17.jpg",
+    image: `${ASSETPATH}` + "/image17.svg",
     discount: "30",
   },
   {
@@ -340,7 +341,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps[] = [
       shower: "3",
       occupants: "4-5",
     },
-    image: "https://example.com/image18.jpg",
+    image: `${ASSETPATH}` + "/image18.svg",
     discount: "",
   },
   {
@@ -358,7 +359,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps[] = [
       shower: "5",
       occupants: "8-10",
     },
-    image: "https://example.com/image19.jpg",
+    image: `${ASSETPATH}` + "/image19.svg",
     discount: "60",
   },
   {
@@ -376,7 +377,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps[] = [
       shower: "3",
       occupants: "4-5",
     },
-    image: "https://example.com/image20.jpg",
+    image: `${ASSETPATH}` + "/image20.svg",
     discount: "",
   },
 ];
@@ -400,3 +401,56 @@ export const ACCOMMODATIONCATEGORIES: AccommodationTypes[] = [
   { id: 16, name: "Cabin", image: CABINS },
   { id: 17, name: "Castles", image: CASTLES },
 ];
+
+export const FILTERS: string[] = [
+  "All",
+  "Top Villa",
+  "Free Reschedule",
+  "Book Now, Pay later",
+  "Self Checkin",
+  "Instant Book",
+];
+
+export const FooterData: FooterProps[] = [
+  {
+    title: "Explore",
+    description: "",
+    links: [
+      { name: "Apartments in Dubai", href: "#" },
+      { name: "Hotels in New York", href: "#" },
+      { name: "Villa in Spain", href: "#" },
+      { name: "Mansion in Indonesia", href: "#" },
+    ],
+  },
+  {
+    title: "Company",
+    description: "",
+    links: [
+      { name: "About us", href: "#" },
+      { name: "Blog", href: "#" },
+      { name: "Career", href: "#" },
+      { name: "Customers", href: "#" },
+      { name: "Brand", href: "#" },
+    ],
+  },
+  {
+    title: "Help",
+    description: "",
+    links: [
+      { name: "Support", href: "#" },
+      { name: "Cancel Booking", href: "#" },
+      { name: "Refunds Process", href: "#" },
+    ],
+  },
+];
+
+export const PolicyData: PolicyProps = {
+  description:
+    "Some hotel requires you to cancel more than 24 hours before check-in. Details here",
+  links: [
+    { name: "Terms of Service", href: "#" },
+    { name: "Policy Service", href: "#" },
+    { name: "Cookie Policy", href: "#" },
+    { name: "Partners", href: "#" },
+  ],
+};

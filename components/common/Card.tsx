@@ -1,5 +1,4 @@
 import Image from "next/image";
-import HOUSE_IMAGE from "@/public/assets/images/house.png";
 import STAR_IMAGE from "@/public/assets/images/star.png";
 import React from "react";
 import Pill from "./Pill";
@@ -15,8 +14,10 @@ const Card: React.FC<PropertyProps> = ({
   image,
   discount,
 }) => {
+  const ASSETPATH = "/assets/images/svgs";
+
   return (
-    <div className="h-[422px] w-[340px] cursor-pointer hover:shadow-md hover:rounded-lg ">
+    <div className="relative h-[422px] w-[340px] cursor-pointer hover:shadow-md hover:rounded-lg ">
       <Image
         className="rounded-lg"
         src={image}
@@ -29,7 +30,7 @@ const Card: React.FC<PropertyProps> = ({
           <Pill key={index} title={cat} />
         ))}
       </div>
-      <div className="flex items-center justify-between text-gray-900">
+      <div className="flex items-center justify-between my-6 px-3 text-gray-900">
         <div>
           <h3 className=" font-semibold text-[15px] text-gray-900">{name}</h3>
           <p className=" font-medium text-[13px] text-gray-900">
@@ -42,8 +43,8 @@ const Card: React.FC<PropertyProps> = ({
         </div>
       </div>
 
-      <div className="flex justify-between mt-4 text-gray-900">
-        <div className=" grid grid-cols-3 border border-gray-300 w-[156px] rounded-full px-2 py-1">
+      <div className="flex justify-between my-4 px-3 text-gray-900">
+        <div className=" grid grid-cols-3 border border-gray-300 w-[166px] rounded-full px-2 py-1">
           <div className="flex items-center">
             <svg
               width="21"
@@ -111,19 +112,22 @@ const Card: React.FC<PropertyProps> = ({
             </p>
           </div>
         </div>
-        <p className=" text-[22px] font-semibold">
+        <p className=" text-[15px] font-semibold">
           ${price}
-          <span className=" text-[14px] text-gray-900">/n</span>
+          <span className=" text-[14px] text-gray-400">/n</span>
         </p>
       </div>
 
       {discount && (
-        <div className="relative top-0.5 left-0.5 bg-green-600 p-2">
-          <div className="flex items-center justify-between mt-2">
-            <p className="text-[12px] text-gray-500 line-through">
-              ${price + (price * parseInt(discount)) / 100}
-            </p>
-            <span className="text-[12px] text-red-500 font-semibold">
+        <div className="absolute top-5 left-[-10px] bg-green-400 p-2 rounded-t-xl rounded-br-xl">
+          <div className="flex items-center justify-between gap-2">
+            <Image
+              src={`${ASSETPATH}/Subtract.svg`}
+              alt="discount icon"
+              width={20}
+              height={20}
+            />
+            <span className="text-[12px] font-thin text-white">
               {discount}% off
             </span>
           </div>

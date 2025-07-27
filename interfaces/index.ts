@@ -33,3 +33,14 @@ export interface AccommodationTypes {
 export interface PillProps {
   title: string;
 }
+
+export interface FooterProps {
+  title: string;
+  description: string;
+  links: { name: string; href: string }[];
+}
+
+export interface PolicyProps {
+  description: string;
+  links: { name: string; href: string }[];
+}
